@@ -1,0 +1,77 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,.swiper-button-prev{
+  color: $primary;
+  border-radius: 100%;
+  padding: 2rem 2rem;
+  border: 2px solid $secondary;
+  background-color: $white;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    font-size:1rem!important ;
+}
+
+.swiper-button-disabled{
+  color: $primary;
+}
+
+.image_link{
+  width: 100%;
+  height: 100%;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.caption{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  color: $white;
+  box-shadow: #09384d 0px -111px 86px -28px inset;
+  &__title{
+    padding: 0.5rem 0.75rem;
+    background-color: #2bb5d0;
+    
+  }
+  &__media{
+    width: 100%;
+    text-align: start;
+    gap: 1rem;
+  }
+  &__text{
+    align-self: flex-start;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

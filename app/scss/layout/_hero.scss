@@ -1,0 +1,68 @@
+.hero {
+  background-color: $primary;
+  color: $white;
+  padding-top: calc(79.4px + 4rem);
+  margin-bottom: calc(230px - 4rem);
+
+  &__content {
+    width: 50%;
+  }
+
+  &__note {
+    margin-bottom: 2rem;
+    p:nth-child(2) {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .note {
+    font-weight: bold;
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__intro {
+    .categorie {
+      padding: 0.5rem;
+      background-color: #2bb5d0;
+      margin-right: 1rem;
+    }
+    .icon-star-full {
+      color: #ffbc50;
+      margin-right: 0.25rem;
+    }
+
+    .icon-location {
+      color: $secondary;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+
+    .location {
+      text-transform: uppercase;
+      font-size: 1.125rem;
+    }
+  }
+  &__intro > * + * {
+    margin-top: 1.75rem;
+  }
+}
+
+#img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 230px;
+  background-color: $primary;
+  -webkit-mask: url("../../images/SO-mask.svg");
+  -webkit-mask-size: 140%;
+  mask-repeat: no-repeat;
+  mask-position: bottom;
+  transform: rotate(180deg);
+}

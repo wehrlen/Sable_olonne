@@ -1,0 +1,46 @@
+.feature {
+  color: $primary;
+  [class^="icon"] {
+    color: $secondary;
+  }
+  &__content {
+    width: 50%;
+  }
+
+  &__info {
+    [class^="icon"] {
+      color: #2bb5d0;
+      font-size: 2rem;
+    }
+    .boxes {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .establishment {
+      display: flex;
+      gap: 1rem;
+
+      div {
+        width: 33.33%;
+        height: 150px;
+        background-color: gray;
+      }
+    }
+
+    .td {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      font-weight: bold;
+    }
+
+    .map {
+      margin-top: 2rem;
+    }
+  }
+}

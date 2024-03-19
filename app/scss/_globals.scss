@@ -1,0 +1,96 @@
+//Variables
+// =======================
+$primary: #09384d;
+$secondary: #fa3379;
+$tertiary: #2bb5d0;
+$white: #fff;
+
+// Globals
+// ==================
+$font-sm: 0.875rem; // 14px
+$font-med: 1.125rem; // 18px
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;
+
+body {
+  line-height: 1.3;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
+  background-color: #fdfdfd;
+  color: $primary;
+}
+
+section{
+  padding: 2rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+
+  gap: 2rem;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-fd-c {
+    flex-direction: column;
+  }
+  &-xl-gap {
+    gap: 4rem;
+  }
+}
+
+.box {
+  padding: 0.5rem 0.75rem;
+  background-color: #d3f0f6;
+  color: #45bed5;
+}
+
+.icon-box {
+  max-height: 56px;
+  padding: 0.75rem 1rem;
+  background-color: #d3f0f6;
+  color: #45bed5;
+}
+
+hr {
+  color: #e3ebef;
+  width: 100%;
+}
+
+
