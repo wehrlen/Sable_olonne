@@ -1,18 +1,17 @@
-.button {
+%button-style {
     position: relative;
     display: inline-block;
     padding: 0.875rem 2.1875rem;
-    background-color: $secondary;
-    border: 0;
+    border: 1px solid $secondary;
     border-radius: 50px;
     cursor: pointer;
     color: $white;
     font-weight: bold;
     font-size: $font-sm;
-    transition: opacity 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out; 
     overflow: hidden;
   
-    &::before {
+    /*&::before {
       content: "";
       position: absolute;
       top: 0;
@@ -26,5 +25,27 @@
   
     &:hover::before {
       opacity: 1;
-    }
+    }*/
+}
+
+.button {
+  @extend %button-style;
+  background-color: $secondary;
+  color: $white;
+
+  &:hover {
+    background-color: $white; 
+    color: $secondary; 
+  }
+}
+
+.secondary-button {
+  @extend %button-style;
+  background-color: $white;
+  color: $primary;
+
+  &:hover {
+    background-color: $white; 
+    color: $primary; 
+  }
 }

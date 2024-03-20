@@ -8,7 +8,13 @@
     align-items: center;
     justify-content: space-between;
     color: $white;
-    padding: 1.75rem 0rem 1.75rem 0rem;
+    padding: 1.75rem 3rem 1.75rem 0rem;
+    @include breakpoint-down(large) {
+      padding: 1.75rem 10rem 1.75rem 2rem;
+    }
+    @include breakpoint-down(xxlarge) {
+      padding: 1.75rem 10rem 1.75rem 2rem;
+    }
     &__logo {
       position: absolute;
       left: 50%;
@@ -65,7 +71,7 @@
           height: 5px;
           left: 0;
           right: 0;
-          bottom: -29px;
+          bottom: -27px;
           background-color: $secondary;
           opacity: 1;
           transition: opacity 300ms ease-in-out;

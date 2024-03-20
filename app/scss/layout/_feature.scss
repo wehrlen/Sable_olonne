@@ -3,14 +3,25 @@
   [class^="icon"] {
     color: $secondary;
   }
+
+  .container{
+    @include breakpoint-down(medium) {
+      flex-direction: column-reverse;
+    }
+  }
+
+
   &__content {
     width: 50%;
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
   }
 
   &__info {
     [class^="icon"] {
       color: #2bb5d0;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     .boxes {
       margin: 1rem 0;
@@ -41,6 +52,14 @@
 
     .map {
       margin-top: 2rem;
+    }
+  }
+
+  &__card{
+    width: 45%;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
     }
   }
 }

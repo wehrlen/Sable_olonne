@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="/dist/css/style.css" />
@@ -313,46 +317,102 @@
 
         <div class="feature__info">
           <h3>A voir aussi</h3>
+          <div class="article flex flex-fd-c">
+            <a href="#" class="article__item flex ">
+              <div class="article__image" style="background-image: url('/images/chambre.jpg')"></div>
+              <div class="article__text flex flex-jc-sb">
+                <div class="article__description flex flex-fd-c">
+                  <div class="article__title">
+                    Les meilleurs spots & activité pour les riders
+                  </div>
+                  <div class="caption__title">Voile nautique</div>
+
+                  <div class="article__location">
+                    <span class="icon-location"></span> L'ile-D'yeu
+                  </div>
+                </div>
+
+                <div class="article__like">
+                  <span class="icon-heart"></span>
+                </div>
+
+              </div>
+            </a>
+
+            <a href="#" class="article__item flex ">
+              <div class="article__image" style="background-image: url('/images/chambre.jpg')"></div>
+              <div class="article__text flex flex-jc-sb">
+                <div class="article__description flex flex-fd-c">
+                  <div class="article__title">
+                    Les meilleurs spots & activité pour les riders
+                  </div>
+                  <div class="caption__title">Voile nautique</div>
+
+                  <div class="article__location">
+                    <span class="icon-location"></span> L'ile-D'yeu
+                  </div>
+                </div>
+
+                <div class="article__like">
+                  <span class="icon-heart"></span>
+                </div>
+
+              </div>
+            </a>
+          </div>
         </div>
       </div>
+      <div class="feature__card">
+        <div class="card">
 
-      <div class="card">
+          <div class="card__media">
+            <img class="logo" src="/images/chambre.jpg">
 
-        <div class="media">
-          <img class="logo" src="/images/chambre.jpg">
+            <div class="info">
+              <div class="price">
+                <p>à partir de</p>
+                <p>180 €</p>
+              </div>
 
-          <div class="media_info">
-            <div class="price">
-              <p>à partir de</p>
-              <p>180 €</p>
+              <div class="card__pagination">
+                <a class="dot active"></a>
+                <a class="dot"></a>
+                <a class="dot"></a>
+              </div>
+
+              <div class="boxes">
+
+              </div>
             </div>
-
-            <div class="card-pagination">
-              <a class="dot active"></a>
-              <a class="dot"></a>
-              <a class="dot"></a>
-            </div>
-
-            <div class="boxes">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="card-footer">
-          <div class="flex">
-            <p>Adresse</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa facilis iure dolorem</p>
-          </div>
-          <div class="flex">
-            <p>Service</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa facilis iure dolorem</p>
           </div>
 
 
+          <div class="card__footer flex flex-fd-c">
+            <div class="flex">
+              <p class="card__title">Adresse</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa facilis iure dolorem</p>
+            </div>
+            <div class="flex">
+              <p class="card__title">Service</p>
+              <div class="icon-box">
+                <span class="icon-connection"></span>
+              </div>
+              <div class="icon-box">
+                <span class="icon-tumblr2"></span>
+              </div>
+              <div class="icon-box">
+                <span class="icon-display"></span>
+              </div>
+            </div>
+            <div>
+              <div class=""></div>
+              <a href="#" class="button map">Réserver</a>
+            </div>
+
+
+          </div>
         </div>
       </div>
-
 
     </div>
 
@@ -430,10 +490,8 @@
               </div>
             </div>
           </div>
-
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-
         </div>
       </div>
     </div>
@@ -444,14 +502,13 @@
       <h2>#Lessablesdolonnes</h2>
 
     </div>
-
-
   </section>
 
 
 
   <script src="/app/js/script.js"></script>
-  <script src="/app/js/slider.js"></script>
+  <script src="/app/js/resize.js"></script>
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

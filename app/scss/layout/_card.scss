@@ -1,24 +1,36 @@
 // =================================================================================================
 // Card
 // =================================================================================================
+
 .card {
+
+  @include breakpoint-down(medium) {
+    margin: 0;
+    width: 100%;
+  }
+
+
+  [class^="icon"] {
+    color: #2bb5d0;
+    font-size: 1.5rem;
+  }
   position: sticky;
   top: 20vh;
-  width: 50%;
-  height: 70vh;
+  width: 100%;
+  height: auto;
   margin-top: -603px;
-  box-shadow:
-    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  border-radius: 10rem;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0.5rem;
   background-color: $white;
 
-  .media {
+  &__media {
+    aspect-ratio: 2/1;
     position: relative;
     background: rgba(white, 0.25);
     width: 100%;
     max-height: 50%;
     margin-top: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
     overflow: hidden;
 
     .logo {
@@ -44,36 +56,38 @@
       }
     }
   }
-}
+  .card__pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
-.card-pagination {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 1rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+    .dot {
+      background: rgba(black, 0.25);
+      border-radius: 8px;
+      height: 8px;
+      transform: scale(0.75);
+      cursor: pointer;
+      width: 8px;
 
-  .dot {
-    background: rgba(black, 0.25);
-    border-radius: 8px;
-    height: 8px;
-    transform: scale(0.75);
-    cursor: pointer;
-    width: 8px;
-
-    &.active {
-      background: white;
-      transform: scale(1);
-      transition-delay: 0.4s;
+      &.active {
+        background: white;
+        transform: scale(1);
+        transition-delay: 0.4s;
+      }
     }
   }
-}
 
-.card-footer {
-  
+  .card__footer {
+    padding: 2rem 1.5rem;
+    height: 50%;
+    gap: 1.5rem;
+  }
 
-  padding: 0;
-  height: 50%;
+  &__title{
+    font-weight: bold;
+  }
 }

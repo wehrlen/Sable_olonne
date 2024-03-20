@@ -1,0 +1,49 @@
+.article {
+	[class^="icon"] {
+		color: #fa3379;
+		font-size: 1.25rem;
+	}
+
+	&__item {
+		gap: 0;
+		overflow: hidden;
+		background-color: $white;
+		//box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+		transition: all 150ms ease-in-out;
+
+		&:hover {
+			transform: scale(1.001);
+		}
+	}
+
+	&__image {
+		width: 15rem;
+		aspect-ratio: 1;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&__text {
+		width: 100%;
+		padding: 1.5rem 1rem;
+	}
+
+	&__description{
+		gap: 1rem;
+	}
+
+	&__location {
+		line-height: 1.2;
+		margin-bottom: 0.5rem;
+	}
+	&__title{
+		font-weight: bold;
+	}
+
+	.caption__title{
+		color: $white;
+		width: fit-content;
+	}
+}
+
