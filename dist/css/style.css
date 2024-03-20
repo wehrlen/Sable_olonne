@@ -311,6 +311,18 @@ hr {
   width: 100%;
 }
 
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .show-for-mobile {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot");
@@ -426,10 +438,14 @@ hr {
   width: 100%;
 }
 .header .nav__menu {
-  display: flex;
   align-items: center;
   font-size: 18px;
   font-weight: 500;
+}
+@media (min-width: 40em) {
+  .header .nav__menu {
+    display: flex;
+  }
 }
 .header .nav__menu .links a {
   position: relative;

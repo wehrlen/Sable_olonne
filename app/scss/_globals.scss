@@ -144,3 +144,16 @@ hr {
 }
 
 
+// Visibility
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+// Visibility
+.show-for-mobile {
+  @include breakpoint-down(medium) {
+    display: block;
+  }
+}

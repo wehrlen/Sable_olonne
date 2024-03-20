@@ -28,7 +28,10 @@
       }
     }
     &__menu {
-      display: flex;
+      @include breakpoint-up(medium) {
+        display: flex;
+      }
+      
 
       align-items: center;
       font-size: 18px;
